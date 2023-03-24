@@ -11,7 +11,7 @@
 body {
     /* font-size: 62.5%; */
     background-color: #1F1E28;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     color: #f5f5f5;
 }
@@ -27,7 +27,6 @@ body {
 
     border-radius: 18px;
     margin: 0 0.85rem ;
-
 }
 .user-head {
   padding: 0.25rem;
@@ -68,4 +67,28 @@ input {
     font-size: 18px;
     font-weight: 500 ;
     border: 3px solid #a6a6a6;
+}
+.checkbox {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+}
+.checkbox input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+label {
+    margin: 0.8rem 0;
+}
+button[type="submit"] {
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+}
+input:checked + label {
+    color: #00fc00;
 }

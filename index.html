@@ -15,14 +15,27 @@
             <p>Sign form</p>
         </div>   
         <div class="ask-phrase">Please enter the following: </div>
+        <form>
         <div class="input-box">
             <!-- <div class="name">Enter your Name:</div> -->
-            <input type="text" id="text-input" required placeholder="Your Name">
-            <input type="number" id="age-input" required placeholder="Your Age">
-            <input type="number" id="game-input" placeholder="Your Game">
-            <input type="number" id="time-input" placeholder="Your time">
+            <input type="text" id="name-input" required placeholder="Your Name (required)">
+            <input type="number" id="age-input" placeholder="Your Age (optional)">
+            <input type="text" id="game-input" required placeholder="Your Game (required)">
+            <input type="time" id="time-input" required placeholder="Your time (required)">
+            <div class="question">Do you want to share your name?</div>
+            <div class="checkbox">
+                <input type="checkbox"  class='checkboxes' name="Yes" id="yes"  onclick="check(this)"  >
+                <label for="Yes" >Yes</label>
+                <input type="checkbox" class='checkboxes'  name="No" id="no" onclick="check(this)">
+                <label for="No">No</label>
+            </div>
+            <button type="submit">Save</button>
+        </form>            
         </div>
         <!-- End of the container -->
     </div>
+
+    <!-- Adding JavaScript here -->
+    <script src="./main.js"></script>
 </body>
 </html>
