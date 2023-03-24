@@ -8,6 +8,7 @@ const name = document.getElementById('name-input');
 const age = document.getElementById('age-input');
 const game = document.getElementById('game-input');
 const time = document.getElementById('time-input');
+
 // The checked-boxes
 const checkboxes = document.getElementsByClassName('checkboxes');
 
@@ -40,3 +41,8 @@ function check(input) {
         }
 };
 
+// let's create a function to hold all of the data
+function userInfo () {
+    console.log(name.value);
+        
+}
